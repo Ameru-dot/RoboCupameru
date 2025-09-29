@@ -1,201 +1,250 @@
-# ロボカップジュニア RoboCupJunior CMS 2024
+# RoboCupJunior CMS 2025
+
 ### Competition Management System
+
 #### (former Rescue Scoring System)
-This is a Competition Management System used in RoboCupJunior's rescue line & maze competitions in word wide.
+
+This is a Competition Management System used in RoboCupJunior's rescue line & maze competitions worldwide.
 Please refer to the [English version README](https://github.com/rrrobo/rcj-rescue-scoring-japan/blob/master/README-EN.md) for details.
 
---
+---
 
-### 大会管理システム(CMS)
-#### (旧：レスキュー　スコアリングシステム)
-これは，ロボカップジュニアレスキュー競技で用いられる大会管理システムです．  
+### Competition Management System (CMS)
 
-#### 対応ルール
-* International RoboCupJunior Rescue Committee により発行された2024ルール
-* 日本のレスキュー技術委員会により発行されたレスキュー・ライン・エントリー2024ルール
---
+#### (formerly: Rescue Scoring System)
 
+This is a competition management system used in RoboCupJunior rescue competitions.
 
-[大元のプロジェクト](https://github.com/TechnoX/rcj-rescue-scoring)からフォークして開発を進めています．
-主な変更点は以下の通りです．
+#### Supported Rules
 
-* ユーザー管理機能を強化
-* マップの回転機能を追加
-* インタビュー機能を追加
-* 国際2024ルールに対応
-* ラインのタイルセットの在庫管理に対応
-* 大会データーのバックアップ/リストアに対応
-* トラブル発生時のハンドオーバーに対応
-* 紙のスコアシートの出力に対応
-* ドキュメント提出/レビューシステムを統合
-* システムからのメール配信が可能
-* レスキュー・ライン・エントリー / レスキュー・メイズ・エントリー2023ルールに対応
+* 2024 Rules issued by the International RoboCupJunior Rescue Committee
+* Rescue Line Entry 2024 Rules issued by the Japan Rescue Technical Committee
 
-特別な理由がない限り，本リポジトリで提供しているバージョンを使用することをお勧めします．
+---
 
-## 動作デモ
-最新バージョンが稼働しています．Dockerイメージを利用して，OCIのarmインスタンス上に構築しています．
+This project is developed as a fork from the [original project](https://github.com/TechnoX/rcj-rescue-scoring).
+Main changes include:
+
+* Enhanced user management functions
+* Added map rotation function
+* Added interview functionality
+* Support for International 2024 rules
+* Support for tile set inventory management in Line competitions
+* Support for backup/restore of competition data
+* Support for handover in case of trouble
+* Support for printing paper score sheets
+* Integrated document submission/review system
+* Email distribution from the system
+* Support for Rescue Line Entry / Rescue Maze Entry 2023 rules
+
+Unless there is a special reason, it is recommended to use the version provided in this repository.
+
+---
+
+## Live Demo
+
+The latest version is running. It is built on an OCI ARM instance using a Docker image.
 
 [https://osaka.rcj.cloud](https://osaka.rcj.cloud)
 
-## 更新情報
-* [2023/06/04] 国際2023ルールに対応しました。
-* [2022/10/09] レスキュー・メイズ・エントリー 2023ルールに対応しました
-* [2022/09/17] レスキュー・ライン・エントリー 2023ルールに対応しました
-* [2021/10/02] 2022ルールに暫定対応しました．
-* [2021/03/07] 2021ルールに正式に対応しました．
-* [2020/11/28] ドキュメント系システムを本システムに統合しました．また，システムからのチームへのメール配信も可能になりました．
-* [2020/02/10] v20系にて2020ルールに対応しました．
-* [2019/07/17] スコアシートを出力できるようになりました．
-* [2019/03/19] 大会データをバックアップを取ることができるようになりました．また，トップページのUIを大幅に変更しました．
-* [2018/10/24] v.19系にて，2019ルールに対応しました．v.19系では，2018ルールに後方互換性があります．
+---
 
+## Update History
 
-## 使用実績
-**把握している限り**の，本システムを用いて運用を行った主な大会の一覧です．派生バージョンの使用も含みます．
-### 2016年ルール対応版
-* スウェーデン国内大会
-* ロボカップジュニア2017 関東ブロック大会
-* ロボカップジュニア ジャパンオープン2017 ぎふ・中津川
+* [2023/06/04] Supported International 2023 rules
+* [2022/10/09] Supported Rescue Maze Entry 2023 rules
+* [2022/09/17] Supported Rescue Line Entry 2023 rules
+* [2021/10/02] Tentative support for 2022 rules
+* [2021/03/07] Official support for 2021 rules
+* [2020/11/28] Integrated document system into this system; enabled email distribution to teams
+* [2020/02/10] v20 series supports 2020 rules
+* [2019/07/17] Score sheet output enabled
+* [2019/03/19] Competition data backup enabled; major UI changes on the top page
+* [2018/10/24] v19 series supports 2019 rules; backward compatible with 2018 rules
 
-### 2017年ルール対応版
+---
+
+## Usage Record
+
+A list of major competitions where this system has been used (**as far as known**). Includes derived versions.
+
+### 2016 Rules Version
+
+* Sweden National Competition
+* RoboCupJunior 2017 Kanto Block Competition
+* RoboCupJunior Japan Open 2017 Gifu/Nakatsugawa
+
+### 2017 Rules Version
+
 * RoboCup 2017 Nagoya Japan
-* NESTロボコン2017
-* ロボカップジュニア2018 北埼玉ノード大会
-* ロボカップジュニア2018 南埼玉ノード大会
-* ロボカップジュニア2018 千葉ノード大会
-* ロボカップジュニア2018 広島ノード大会
-* ロボカップジュニア2018 大阪中央ノード大会
-* ロボカップジュニア2018 埼玉ブロック大会
-* ロボカップジュニア2018 関東ブロック大会
-* ロボカップジュニア2018 広島ブロック大会
-* ロボカップジュニア2018 関西ブロック大会
-* ロボカップジュニア　ジャパンオープン2018 和歌山
+* NEST Robocon 2017
+* RoboCupJunior 2018 North Saitama Node Competition
+* RoboCupJunior 2018 South Saitama Node Competition
+* RoboCupJunior 2018 Chiba Node Competition
+* RoboCupJunior 2018 Hiroshima Node Competition
+* RoboCupJunior 2018 Osaka Central Node Competition
+* RoboCupJunior 2018 Saitama Block Competition
+* RoboCupJunior 2018 Kanto Block Competition
+* RoboCupJunior 2018 Hiroshima Block Competition
+* RoboCupJunior 2018 Kansai Block Competition
+* RoboCupJunior Japan Open 2018 Wakayama
 
-### 2018年ルール対応版
+### 2018 Rules Version
+
 * RoboCup 2018 Montreal Canada
-* 関西ブロック 夏のオープン大会2018
+* Kansai Block Summer Open Competition 2018
 
-### 2019年ルール対応版
-* ロボカップジュニア2019 東海ブロック大会
-* ロボカップジュニア2019 埼玉ブロック大会
-* ロボカップジュニア2019 広島ブロック大会
-* ロボカップジュニア2019 大阪中央ノード大会
-* ロボカップジュニア2019 関西ブロック大会
-* ロボカップジュニア2019 関東ブロック大会
-* ロボカップジュニア ジャパンオープン2019 和歌山
+### 2019 Rules Version
+
+* RoboCupJunior 2019 Tokai Block Competition
+* RoboCupJunior 2019 Saitama Block Competition
+* RoboCupJunior 2019 Hiroshima Block Competition
+* RoboCupJunior 2019 Osaka Central Node Competition
+* RoboCupJunior 2019 Kansai Block Competition
+* RoboCupJunior 2019 Kanto Block Competition
+* RoboCupJunior Japan Open 2019 Wakayama
 * RoboCup 2019 Sydney Australia
-* ロボカップジュニア2020 大阪中央ノード大会
-* ロボカップジュニア2020 関西ブロック大会
+* RoboCupJunior 2020 Osaka Central Node Competition
+* RoboCupJunior 2020 Kansai Block Competition
 
-### 2021年ルール対応版
-* ロボカップジュニア2021 東海ブロック大会
-* ロボカップジュニア 日本大会2021 オンライン
-* RoboCup2021 WORLDWIDE
+### 2021 Rules Version
 
-### 2022年ルール対応版
+* RoboCupJunior 2021 Tokai Block Competition
+* RoboCupJunior Japan Open 2021 Online
+* RoboCup 2021 Worldwide
+
+### 2022 Rules Version
+
 * RoboCup 2022 Bangkok Thailand
 
-### 2023年ルール対応版
-* ロボカップジュニア2023 東海ブロック大会
-* ロボカップジュニア2023 関東ブロック大会
-* ロボカップジュニア2023 関西ブロック大会
-* ロボカップジュニア2023 広島ブロック大会
-* ロボカップジュニア ジャパンオープン2023 名古屋
-* Torneo Mexicano de Robótica 2023 (メキシコ)
+### 2023 Rules Version
+
+* RoboCupJunior 2023 Tokai Block Competition
+* RoboCupJunior 2023 Kanto Block Competition
+* RoboCupJunior 2023 Kansai Block Competition
+* RoboCupJunior 2023 Hiroshima Block Competition
+* RoboCupJunior Japan Open 2023 Nagoya
+* Torneo Mexicano de Robótica 2023 (Mexico)
 * RoboCup 2023 Bordeaux France
 
-### 2024年ルール対応版
+### 2024 Rules Version
+
 * RoboCup Junior Japan Open 2024 Nagoya
 * RoboCup 2024 Eindhoven
 
-## 使用方法
-### Dockerを利用（推奨）
-[公式Dockerイメージ](https://hub.docker.com/repository/docker/ryorobo/rcj-cms)を用意しています．本イメージからの利用を推奨します．  
-公式Dockerイメージは次のアーキテクチャに対応します．  
+---
+
+## Usage
+
+### Using Docker (Recommended)
+
+[Official Docker Image](https://hub.docker.com/repository/docker/ryorobo/rcj-cms) is available. Usage of this image is recommended.
+The official Docker image supports the following architectures:
+
 * linux/amd64
 * linux/arm/v6
 * linux/arm/v7
 * linux/arm64
 
-また，環境構築用の[ヘルパーファイル](https://github.com/rrrobo/rcj-cms-docker-helper)も用意しています．
+A helper file for environment setup is also provided: [Helper Repository](https://github.com/rrrobo/rcj-cms-docker-helper).
 
+### Without Docker
 
-### Dockerを利用しない構築
-#### 主な必要なソフト
+#### Required Software
+
 * [Node.js](https://nodejs.org/en/)
-* [mongodb](https://www.mongodb.com)
-まず，この２つをインストールする．
+* [MongoDB](https://www.mongodb.com)
 
-### bowerのインストール
-`sudo npm install -g bower`
+Install these two first.
 
-### 各種依存関係の導入
-ディレクトリ内で...
-`npm install`
-`bower install`
-`npm run build`
+#### Install bower
 
-### ログ用ディレクトリの作成
-`mkdir logs`
+```bash
+sudo npm install -g bower
+```
 
-### ドキュメント用ディレクトリの作成
-`mkdir documents`
+#### Install dependencies
 
-### 起動
-`node server`
+In the project directory:
 
-## 初期アカウント
-初期アカウントは次の通りです．  
+```bash
+npm install
+bower install
+npm run build
+```
 
-ユーザー名        | パスワード         |
-----------------|-------------------|
-admin | adminpass   |
+#### Create log directory
 
-## メールの使用設定
-システムからメールを配信するには，使用するSMTPサーバ等の情報を設定する必要があります．
-次の内容を `process.env`　に追記してください．
-設定内容は，各自の環境に合わせて変更してください．このままコピペしても動きません！
+```bash
+mkdir logs
+```
 
-MAIL_SMTP=smtp.example.com  
-MAIL_PORT=587  
-MAIL_USER=smtp_user  
-MAIL_PASS=smtp_password  
-MAIL_FROM=fromAddress@example.com  
-MAIL_SENDER=RoboCupJunior Japan  
+#### Create documents directory
 
-## 詳しい使用方法
-[RCJ Scoring System Community Forum](https://ask.rcj.cloud)をご覧ください．  
-現時点では，原則として，本フォーラムへのアクセスを各地の大会実行委員に相当する方に限定しています．  
-アクセスを希望される場合は，各ブロックのレスキュー技術委員にご相談ください．
+```bash
+mkdir documents
+```
 
-## 主な画面例
-*旧バージョンの情報を含みます．
+#### Start the server
 
-トップ画面(2019)
-<img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/1.png">
+```bash
+node server
+```
+
+---
+
+## Initial Account
+
+The default initial account is:
+
+| Username | Password  |
+| -------- | --------- |
+| admin    | adminpass |
+
+---
+
+## Email Settings
+
+To send emails from the system, configure your SMTP server information.
+Add the following to `process.env`. Adjust to your environment; copy-pasting will not work as-is.
+
+```
+MAIL_SMTP=smtp.example.com
+MAIL_PORT=587
+MAIL_USER=smtp_user
+MAIL_PASS=smtp_password
+MAIL_FROM=fromAddress@example.com
+MAIL_SENDER=RoboCupJunior Japan
+```
+
+---
+
+## More Information
+
+See the [RCJ Scoring System Community Forum](https://ask.rcj.cloud).
+Currently, access to this forum is limited to local competition organizers.
+If you wish to access, please contact your regional Rescue Technical Committee.
+
+---
+
+## Example Screenshots
+
+(*Includes information from older versions*)
+
+Top Page (2019) <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/1.png">
+
 <hr>
-ログイン画面  
+Login Page  
 <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/6.png">
 <hr>
-Line 競技一覧  
+Line Competition List  
 <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/2.png">
 <hr>
-Line 審判1  
+Line Judge 1  
 <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/3.png">
 <hr>
-Line 審判2  
+Line Judge 2  
 <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/4.png">
 <hr>
-Line 確認  
+Line Confirmation  
 <img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/5.png">
-<hr>
-Maze 審判  
-<img src="https://raw.githubusercontent.com/rrrobo/rcj-rescue-scoring-japan/master/rcjj-scoring/7.png">
-<hr>
-
-### 効果音
-以下の効果音を使用しています．
-
-* [MusMus](http://musmus.main.jp)
-* [魔王魂](https://maoudamashii.jokersounds.com)
